@@ -23,3 +23,28 @@ npx playwright show-report
 view JSON report
 {} report.json 
 
+Features
+- Modular Page Object Model
+- UI tests for login, logout, button states, and success/error messages
+- API tests using request.newContext() for login validation
+- Alias path support for cleaner imports
+- HTML reporting and trace viewer
+- Git integration for version control
+
+
+Sample Test Cases
+- ✔️ Valid login shows success message
+- ❌ Invalid login shows error message
+- 🔘 Login button is enabled
+- 🔓 Logout redirects to login page
+- 🌐 API login returns expected response
+
+🔧 Tech Stack
+- Playwright
+- JavaScript (ES Modules)
+- Node.js
+- Git & GitHub
+
+
+
+
