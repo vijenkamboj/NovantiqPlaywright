@@ -12,7 +12,7 @@ test('Valid login shows success message', async ({ page }) => {
   expect(message).toContain('Logged In Successfully');
    });
 
-   test.only('Validate that User can log out successfully', async ({ page }) => {
+   test('Validate that the  user can log out successfully', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const logoutPage = new LogoutPage(page);
 

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "reporter": [
@@ -33,7 +33,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -54,13 +54,13 @@
   },
   "suites": [
     {
-      "title": "loginpositiveScenarios.spec.js",
-      "file": "loginpositiveScenarios.spec.js",
+      "title": "loginnegativeScenarios.spec.js",
+      "file": "loginnegativeScenarios.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Validate that User can log out successfully",
+          "title": "Login with invalid password shows error",
           "ok": true,
           "tags": [],
           "tests": [
@@ -75,12 +75,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4358,
+                  "duration": 5963,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-06T07:26:39.146Z",
+                  "startTime": "2025-07-06T07:59:09.255Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -88,19 +88,171 @@
               "status": "expected"
             }
           ],
-          "id": "6c10279c358c4bcd604b-9919b85aa3297e5a2c57",
+          "id": "a37ce54c79bed14180a9-9a9bc92f8ae386b8ba23",
+          "file": "loginnegativeScenarios.spec.js",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "Login with blank username shows error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5715,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-06T07:59:08.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a37ce54c79bed14180a9-aac5431e884133a8cba6",
+          "file": "loginnegativeScenarios.spec.js",
+          "line": 14,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "LoginpageAPIvalidation.spec.js",
+      "file": "LoginpageAPIvalidation.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API login simulation with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2194,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-06T07:59:09.068Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5eeaafa12ccf3e7fd5c3-316f07fbf75d6c70f59f",
+          "file": "LoginpageAPIvalidation.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "loginpositiveScenarios.spec.js",
+      "file": "loginpositiveScenarios.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Valid login shows success message",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7648,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-06T07:59:09.100Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6c10279c358c4bcd604b-7c278770f2ba46b11c55",
+          "file": "loginpositiveScenarios.spec.js",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "Validate that the  user can log out successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 8247,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-06T07:59:09.095Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6c10279c358c4bcd604b-6a9ae7ffb4f5f21b4ded",
           "file": "loginpositiveScenarios.spec.js",
           "line": 15,
-          "column": 9
+          "column": 8
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-06T07:26:37.750Z",
-    "duration": 7056.146999999999,
-    "expected": 1,
+    "startTime": "2025-07-06T07:59:06.082Z",
+    "duration": 12291.517,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
